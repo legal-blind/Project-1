@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Format Data for Analysis</title>
+    <title>Descriptive Statistics</title>
 </head>
 <body>
     <header>
-        <h1>Format Data for Analysis</h1>
+        <h1>Descriptive Statistics</h1>
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -24,65 +24,43 @@
     </header>
 
     <main>
-        <h2>Format Data for Analysis</h2>
-        <p>Make sure the computer you are working on has Microsoft Excel installed. Open the document <strong>ToolBox_DataLesson.xls</strong> 
-        <a href="#">[Download Tutorial Excel File]</a> in Excel and follow along with the lesson, taking action as instructed.</p>
-
-        <p>In the <strong>Raw_Dataset</strong> spreadsheet, the name of each variable has been entered in the first row of each column:</p>
-        <ul>
-            <li>Each variable name must be different from other variable names.</li>
-            <li>The first variable (in column A) is a unique identifier.</li>
-            <li>Variable names must start with a letter (not numbers or special characters), so change <strong>4tutorial_types</strong> to <strong>tutorial_types</strong>.</li>
-            <li>Name variables so that they are intuitive to you. Therefore, change <strong>use</strong> and <strong>useful</strong> to <strong>perc_ease_of_use</strong> and <strong>perc_usefulness</strong>, respectively.</li>
-        </ul>
-
-        <p>Your spreadsheet should look like Figure 1, and it should now be readily apparent that Column F refers to Perceived Usefulness and Column G refers to Perceived Ease of Use.</p>
+        <h2>Running Descriptive Statistics</h2>
+        <p>Analyzing descriptive statistics may lead you to ask new questions. For example, <strong>perc_enjoy</strong> is much higher on average than <strong>perc_usefulness</strong>, which also has a large variance. This suggests that a segment of users may not have considered the system useful even though they enjoyed using it.</p>
         
-        <figure>
-            <img src="datalesson_fig3.png" alt="Formatted variables in Excel">
-            <figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
-        </figure>
-
-        <p>Data values, or rows, have been input for each subject in the experiment.</p>
-        <ul>
-            <li>Decide on input conventions and stick to them. In the gender column, change the "female" value to "F".</li>
-            <li>Separate data into component values whenever possible by adding new columns. For example, <strong>tasks_completed</strong> values (Y/Y/N) can be broken up into three components.</li>
-            <li>Add columns <strong>task1, task2, and task3</strong>, and reformat values appropriately.</li>
-            <li>Double-check to ensure no data entry errors have been made, then delete the old <strong>tasks_completed</strong> column.</li>
-        </ul>
+        <h3>Steps to Run Descriptive Statistics</h3>
+        <ol>
+            <li>Ensure data requiring summary, those with continuous values, are adjacent.</li>
+            <li>Write down the input range (e.g., <strong>H2:J26</strong>), ensuring variable labels are not included.</li>
+            <li>Go to <em>Tools > Add-Ins...</em> and enable <strong>Analysis ToolPak</strong>.</li>
+            <li>Go to <em>Tools > Data Analysis</em> and select <strong>Descriptive Statistics</strong>.</li>
+            <li>Enter the input range and check <strong>Summary Statistics</strong>.</li>
+            <li>Click OK, and the summary will output in a new sheet.</li>
+            <li>Rename the new sheet to <strong>Descriptive_Stats</strong> and label the output accordingly.</li>
+        </ol>
         
-        <p>Your Raw_Dataset spreadsheet should now look like Figure 2.</p>
-
-        <figure>
-            <img src="datalesson_fig2.png" alt="Consistent data entry format">
-            <figcaption>Values for each variable are entered in a consistent format.</figcaption>
-        </figure>
-
-        <p>Replace categorical data values with "0" or "1" (0=no, 1=yes) to indicate whether or not the value is represented for the given subject/item. 
-        This makes the categorical values dichotomous, which gives the researcher maximum flexibility in testing for relationships or correlations.</p>
-
-        <aside>
-            <h3>Why Use Dichotomous Variables?</h3>
-            <p>Dichotomous variables allow for the easy isolation of characteristics for analysis. For example, separating experience levels allows the researcher to test in PASW whether subjects with low experience have perceived ease of use scores significantly different from those with medium and high experience levels.</p>
-        </aside>
-
-        <p>Copy the <strong>Raw_Dataset</strong> values into the <strong>Sheet2</strong> tab. Rename this sheet <strong>Formatted_Data</strong>.</p>
-
-        <p>In the <strong>Formatted_Data</strong> sheet:</p>
+        <h3>Running Inferential Statistics in PASW</h3>
+        <p>To run inferential statistics, open PASW and upload the spreadsheet:</p>
         <ul>
-            <li>Add new columns with <strong>Insert > Columns</strong> for each distinct value in categorical data columns (<strong>tutorial_types, gender, exp_level, task1, task2, and task3</strong>).</li>
-            <li>You do not have to add a new column for task1, task2, and task3 because their values are already dichotomous.</li>
-            <li>Rename columns according to each possible categorical value. Copy and paste the values from the original column.</li>
-            <li>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: <strong>Edit > Replace</strong>.</li>
+            <li>Go to <em>Open an existing data source > More Files...</em> and select the Formatted_Data worksheet.</li>
+            <li>Use the <em>Analyze</em> menu to find statistical methods such as Wilcoxon-Mann-Whitney test, Simple Linear Regression, and Non-Parametric Correlation.</li>
+            <li>Use the Kruskal-Wallis one-way analysis to determine differences in <strong>perc_usefulness</strong> between <strong>free_play</strong> and other tutorial types.</li>
+            <li>Save statistical analysis output by exporting it to Word, Excel, or PDF.</li>
         </ul>
-
-        <p>Your Formatted_Data spreadsheet should now look like Figure 3.</p>
-
-        <figure>
-            <img src="datalesson_fig3 (1).png" alt="Dichotomous variable formatting">
-            <figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
-        </figure>
-
     </main>
+
+    <aside>
+        <h3>Lesson Requirements</h3>
+        <p><strong>Tools Required:</strong></p>
+        <ul>
+            <li>Microsoft Excel with Analysis ToolPak enabled</li>
+            <li>PASW (formerly SPSS) statistics software</li>
+        </ul>
+        <p><strong>Prior Knowledge:</strong></p>
+        <ul>
+            <li>Basic Excel functionality</li>
+            <li>Descriptive and inferential statistics</li>
+            <li>Research design concepts</li>
+        </ul>
+    </aside>
 </body>
 </html>
