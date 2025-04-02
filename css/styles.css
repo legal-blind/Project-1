@@ -1,18 +1,19 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #eef2f3;
+    color: #222;
 }
 
 /* Header Styles */
 header {
-    background: #004080;
+    background: #2c3e50;
     color: white;
     padding: 20px;
     text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 nav ul {
@@ -26,31 +27,42 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #f1c40f;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e67e22;
 }
 
 /* Main Content */
 main {
     padding: 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 section {
     margin-bottom: 20px;
     padding: 15px;
+    background: #ffffff;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
 }
 
 h2 {
-    color: #004080;
+    color: #2c3e50;
+    font-family: 'Merriweather', serif;
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 16px;
 }
 
 img {
@@ -58,6 +70,7 @@ img {
     height: auto;
     display: block;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
 /* Research Topics List */
@@ -69,21 +82,24 @@ ul li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 ul li img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    border-radius: 50%;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background: #004080;
+    padding: 15px;
+    background: #2c3e50;
     color: white;
     position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
 }
