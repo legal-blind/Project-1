@@ -1,19 +1,20 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eef2f3;
-    color: #222;
+    background-color: #fdf6e3;
+    color: #333;
 }
 
 /* Header Styles */
 header {
-    background: #2c3e50;
+    background: #6c5ce7;
     color: white;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
-    font-family: 'Merriweather', serif;
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
 }
 
 nav ul {
@@ -23,54 +24,54 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: #f1c40f;
+    color: #fdcb6e;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #e67e22;
+    color: #e17055;
 }
 
 /* Main Content */
 main {
-    padding: 20px;
-    max-width: 900px;
+    padding: 25px;
+    max-width: 950px;
     margin: auto;
-    background: white;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
 }
 
 section {
-    margin-bottom: 20px;
-    padding: 15px;
+    margin-bottom: 25px;
+    padding: 20px;
     background: #ffffff;
-    border-left: 5px solid #3498db;
-    border-radius: 5px;
+    border-left: 6px solid #00cec9;
+    border-radius: 6px;
 }
 
 h2 {
-    color: #2c3e50;
-    font-family: 'Merriweather', serif;
+    color: #6c5ce7;
+    font-family: 'Lora', serif;
 }
 
 p {
-    line-height: 1.7;
-    font-size: 16px;
+    line-height: 1.8;
+    font-size: 17px;
 }
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-top: 10px;
-    border-radius: 5px;
+    margin-top: 12px;
+    border-radius: 6px;
 }
 
 /* Research Topics List */
@@ -81,14 +82,14 @@ ul {
 ul li {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 12px;
+    font-size: 17px;
 }
 
 ul li img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
     border-radius: 50%;
 }
 
@@ -96,10 +97,10 @@ ul li img {
 footer {
     text-align: center;
     padding: 15px;
-    background: #2c3e50;
+    background: #6c5ce7;
     color: white;
     position: relative;
     bottom: 0;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
 }
